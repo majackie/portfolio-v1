@@ -1,0 +1,61 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  padding-top: 30px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: grey;
+}
+
+.lightMode {
+  margin-left: auto;
+}
