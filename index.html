@@ -6,29 +6,78 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Jackie Ma</title>
 </head>
 
 <body>
 
-  <div class="nav" id="home">
-    <a href="#home">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#resume">Resume</a>
-    <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
-      <img src="hamburger.svg" alt="hamburger menu" id="hamburger">
+  <div class="nav" id="navContainer">
+    <a href="#home" onclick="closeMenu()">Home</a>
+    <a href="#projects" onclick="closeMenu()">Projects</a>
+    <a href="#education" onclick="closeMenu()">Education</a>
+    <a href="#experience" onclick="closeMenu()">Experience</a>
+    <a href="#resume" onclick="closeMenu()">Resume</a>
+    <a href="javascript:void(0);" class="icon" onclick="openMenu()" id="test">
+      <img src="hamburger.svg" alt="menu" id="hamburger">
     </a>
   </div>
 
-  <div style="padding-left:16px">
-    <h1>Jackie Ma</h1>
-    <h2>Software Developer</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut esse sit, earum debitis est, hic voluptatibus possimus autem tempora quod ullam. Beatae sit totam, ea quae sint aut praesentium hic?</p>
+  <div id="container">
+
+    <section id="home">
+      <h1>Jackie Ma</h1>
+      <h2>Software Developer</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt excepturi distinctio
+        quo
+        odit est consequuntur. Aliquam eligendi similique ipsa quasi sed perferendis consectetur
+        ducimus. Dolores modi illum sit omnis aspernatur dicta velit iste vel incidunt, nemo
+        numquam
+        mollitia natus corporis. Ratione, ab voluptatum porro magnam quae est sunt a rem beatae
+        voluptate doloremque suscipit earum labore eius aperiam rerum in cupiditate maiores dicta
+        provident nemo veritatis velit distinctio. Doloremque error fuga velit aliquam rerum hic
+        fugit ducimus nemo, quibusdam provident nostrum voluptatibus autem tempore praesentium,
+        dolores ipsa quam nisi perspiciatis soluta qui officiis dolorem, laudantium omnis.
+        Voluptas
+        ratione quis at.</p>
+      <img src="avatar.jpeg" alt="avatar" id="avatar">
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <h3>BCIT</h3>
+      <span>January 2022 - December 2023</span>
+      <h4>Computer Sytems Technology</h4>
+
+      <h3>BCIT</h3>
+      <span>September 2017 - June 2020</span>
+      <h4>Architectural and Building Technology</h4>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <h3>Bingam + Hill Architects</h3>
+      <span>September 2021 - December 2021</span>
+      <h4>Junior Technician</h4>
+
+      <h3>Seng Tsoi Architect</h3>
+      <span>March 2021 - September 2021</span>
+      <h4>Building Technologist</h4>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <embed src="Jackie Ma - Resume.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0"
+             width="465" height="600" id="pdf">
+    </section>
+
   </div>
+
   <script src="scripts.js"></script>
 
 </body>
