@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Portfolio</title>
+  <title>Jackie Ma</title>
 </head>
 
 <body>
@@ -19,13 +19,14 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#resume">Resume</a></li>
-        <!-- <li><a href="#" style="float:right" class="lightMode" onclick="lightMode()">Light Mode</a></li> -->
       </ul>
     </nav>
-    <a href="#" style="float:right" class="lightMode" onclick="lightMode()">Light Mode</a>
-    <h1>Jackie Ma</h1>
-    <h2>Software Developer</h2>
-    <img src="avatar.jpeg" alt="avatar" style="width: 300px;">
+    <img src="mooncake.svg" alt="mooncake" id="mooncake" class="lightMode" onclick="lightMode()">
+    <div id="info">
+      <h1>Jackie Ma</h1>
+      <h2>Software Developer</h2>
+    </div>
+    <img src="avatar.jpeg" alt="avatar" id="avatar">
   </section>
 
   <section id="projects">
@@ -46,11 +47,20 @@
 
   <section id="experience">
     <h2>Experience</h2>
+
+    <h3>Bingam + Hill Architects</h3>
+    <span>September 2021 - December 2021</span>
+    <h4>Junior Technician</h4>
+
+    <h3>Seng Tsoi Architect</h3>
+    <span>March 2021 - September 2021</span>
+    <h4>Building Technologist</h4>
   </section>
 
-  <section id="Resume">
+  <section id="resume">
     <h2>Resume</h2>
-    <embed src="Jackie Ma - Resume.pdf" width="450" height="637">
+    <embed src="Jackie Ma - Resume.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0"
+           width="465" height="600" id="pdf">
   </section>
 
   <script src="scripts.js"></script>
