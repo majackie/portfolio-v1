@@ -5,40 +5,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <title>Jackie Ma</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <div class="nav" id="navContainer">
-    <a href="#home" onclick="closeMenu()">Home</a>
-    <a href="#projects" onclick="closeMenu()">Projects</a>
-    <a href="#education" onclick="closeMenu()">Education</a>
-    <a href="#experience" onclick="closeMenu()">Experience</a>
-    <a href="#resume" onclick="closeMenu()">Resume</a>
-    <a href="javascript:void(0);" class="icon" onclick="openMenu()" id="test">
-      <img src="hamburger.svg" alt="menu" id="hamburger">
-    </a>
-  </div>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="nav-branding"><img src="logo.svg" alt="logo" class="nav-logo"></a>
 
-  <div id="container">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#education" class="nav-link">Education</a>
+        </li>
+        <li class="nav-item">
+          <a href="#experience" class="nav-link">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a href="#resume" class="nav-link">Resume</a>
+        </li>
+      </ul>
 
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
     <section id="home">
       <h1>Jackie Ma</h1>
       <h2>Software Developer</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt excepturi distinctio
-        quo
-        odit est consequuntur. Aliquam eligendi similique ipsa quasi sed perferendis consectetur
-        ducimus. Dolores modi illum sit omnis aspernatur dicta velit iste vel incidunt, nemo
-        numquam
-        mollitia natus corporis. Ratione, ab voluptatum porro magnam quae est sunt a rem beatae
-        voluptate doloremque suscipit earum labore eius aperiam rerum in cupiditate maiores dicta
-        provident nemo veritatis velit distinctio. Doloremque error fuga velit aliquam rerum hic
-        fugit ducimus nemo, quibusdam provident nostrum voluptatibus autem tempore praesentium,
-        dolores ipsa quam nisi perspiciatis soluta qui officiis dolorem, laudantium omnis.
-        Voluptas
-        ratione quis at.</p>
       <img src="avatar.jpeg" alt="avatar" id="avatar">
     </section>
 
@@ -75,8 +81,7 @@
       <embed src="Jackie Ma - Resume.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0"
              width="465" height="600" id="pdf">
     </section>
-
-  </div>
+  </main>
 
   <script src="scripts.js"></script>
 

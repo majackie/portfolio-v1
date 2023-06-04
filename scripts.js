@@ -1,13 +1,12 @@
-function openMenu() {
-  const home = document.getElementById("navContainer");
-  if (home.className === "nav") {
-    home.className = "nav vertical";
-  } else {
-    home.className = "nav";
-  }
-}
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
-function closeMenu() {
-  const home = document.getElementById("navContainer");
-  home.className = "nav";
-}
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
+
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('active');
+}));
