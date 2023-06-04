@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 html {
+  font-family: 'Teko', sans-serif;
   background-color: black;
   color: white;
   scroll-snap-type: y mandatory;
@@ -31,17 +33,12 @@ section {
   scroll-snap-align: start;
 }
 
-/* section:nth-child(odd) {
-  background-color: grey;
-} */
-
 .navbar {
   min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-  /* position: fixed; */
 }
 
 .nav-menu {
@@ -54,17 +51,8 @@ section {
 .nav-logo {
   width: 50px;
   border-radius: 50%;
-  /* border: 1px solid white; */
   background-color: white;
 }
-
-/* .nav-branding {
-  font-size: 2rem;
-} */
-
-/* .nav-link {
-  transition: 0.7s ease;
-} */
 
 .nav-link:hover {
   color: dodgerblue;
@@ -80,14 +68,59 @@ section {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  /* -webkit-transition: all 0.3s ease-in-out; */
-  /* transition: all 0.3s ease-in-out; */
   background-color: white;
 }
 
+#home {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "name avatar"
+    "bio bio";
+}
+
+#name {
+  grid-area: name;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bio {
+  grid-area: bio;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 #avatar {
-  width: 300px;
+  grid-area: avatar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#avatar > img {
+  width: 150px;
   border-radius: 50%;
+}
+
+#name > h1 {
+  font-size: 3rem;
+}
+
+#name > h2 {
+  font-size: 1.5rem;
+}
+
+#pdf {
+  /* width: 465px; 
+  height: 600px;  */
+  width: 375px;
+  height: 484px;
 }
 
 @media(max-width: 768px) {
@@ -116,7 +149,6 @@ section {
     background-color: #262626;
     width: 100%;
     text-align: center;
-    /* transition: 0.3s; */
   }
 
   nav-item {
